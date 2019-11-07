@@ -11,7 +11,7 @@ function waterCannon() {
       document.getElementById('message').innerHTML = " Odyssues's attack missed! ";
     }
     else {
-      document.getElementById('message').innerHTML = " Odyssues used water cannon "; // attack
+      document.getElementById('message').innerHTML = " Odyssues used Arrow "; // attack
       var critical = Math.floor((Math.random() * 10) + 1); // critical
       if(critical == 4){
         for(var x = 0; x < 2; x++){
@@ -24,7 +24,7 @@ function waterCannon() {
       if(opHP < 0){ opHP = 0} //faint
         document.getElementById('apHP').innerHTML = opHP; // update hp
       if(opHP == 0){
-        document.getElementById('message').innerHTML = " Suitors fainted! " // update message
+        document.getElementById('message').innerHTML = " Odyssues fainted! " // update message
       }
     }
     //wait();
@@ -39,7 +39,7 @@ function waterPulse() {
     document.getElementById('message').innerHTML = " Odyssues's attack missed! "
   }
   else {
-    document.getElementById('message').innerHTML = " Odyssues used water pulse ";
+    document.getElementById('message').innerHTML = " Odyssues used Cunning Tactics! ";
     var critical = Math.floor((Math.random() * 10) + 1);
       if(critical == 4){
         for(var x = 0; x < 2; x++){
@@ -53,7 +53,7 @@ function waterPulse() {
     document.getElementById('apHP').innerHTML = opHP;
     //document.getElementById('message').innerHTML = " Charizard2 "
     if(opHP == 0){
-      document.getElementById('message').innerHTML = " Suitor fainted! "
+      document.getElementById('message').innerHTML = " Odyssues fainted! "
     }
   }
   //wait();
@@ -69,7 +69,7 @@ function surf() {
     document.getElementById('message').innerHTML = " Odyssues's attack missed! "
   }
   else {
-    document.getElementById('message').innerHTML = " Odyssues used surf ";
+    document.getElementById('message').innerHTML = " Odyssues used Sword ";
     var critical = Math.floor((Math.random() * 10) + 1);
       if(critical == 4){
         for(var x = 0; x < 2; x++){
@@ -82,7 +82,7 @@ function surf() {
     if(opHP < 0 ) { opHP = 0}
     document.getElementById('apHP').innerHTML = opHP;
     if(opHP == 0){
-      document.getElementById('message').innerHTML = " Suitors fainted! "
+      document.getElementById('message').innerHTML = " Odyssues fainted! "
     }
   }
   //wait();
@@ -111,7 +111,7 @@ function tackle() {
     document.getElementById('apHP').innerHTML = opHP;
   //document.getElementById('message').innerHTML = " Charizard4 "
     if(opHP == 0){
-      document.getElementById('message').innerHTML = " Odyssues fainted! "
+      document.getElementById('message').innerHTML = " Suitors fainted! "
     }
   }
   //wait();
@@ -142,7 +142,7 @@ function flameThrower() {
   if(userHP < 0) { userHP = 0} // faint
   document.getElementById('myHP').innerHTML = userHP; // update hp
     if(userHP == 0) { // fainted
-      document.getElementById('message').innerHTML = " Odyssues fainted! " // fainted
+      document.getElementById('message').innerHTML = " Suitors fainted! " // fainted
     }
   }
 }
@@ -166,7 +166,7 @@ function dragonClaw() {
   if(userHP < 0) { userHP = 0}
   document.getElementById('myHP').innerHTML = userHP;
     if(userHP == 0){
-      document.getElementById('message').innerHTML = " Odyssues fainted! "
+      document.getElementById('message').innerHTML = " Suitors fainted! "
     }
   }
 }
@@ -190,7 +190,7 @@ function ember() {
   if(userHP < 0) { userHP = 0}
   document.getElementById('myHP').innerHTML = userHP;
     if(userHP == 0){
-      document.getElementById('message').innerHTML = " Odyssues fainted! "
+      document.getElementById('message').innerHTML = " Suitors fainted! "
     }
   }
 }
@@ -214,7 +214,7 @@ function growl() {
   if(userHP < 0) { userHP = 0}
   document.getElementById('myHP').innerHTML = userHP;
     if(userHP == 0){
-      document.getElementById('message').innerHTML = " Odyssues fainted! "
+      document.getElementById('message').innerHTML = " Suitors fainted! "
     }
   }
 }
